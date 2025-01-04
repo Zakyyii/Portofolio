@@ -1,0 +1,143 @@
+*, html {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #5c1212;
+}
+
+header.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 1rem;
+    margin-inline:auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100px;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+}
+
+header.navbar-container .logo h3 {
+    color: #b74b4b;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: 800;
+    transition: all 0.15s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.8);
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.15s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+header.navbar-container .nav-list li .home {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* .nav-list li .home {
+    display: block;
+} */
+
+nav.nav-list li:hover a   {
+    font-weight: bold;
+    transform: scale(1.1);
+    border-bottom: 3px solid #b74b4b;
+}
+
+section{
+    min-height: 80vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 3rem;
+    /* background-color: black; */
+}
+
+.home .home-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #b74b4b;
+}
+
+.home-content h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.3rem;
+}
+
+.home-img {
+    border-radius: 50%;
+}
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius:50% ;
+    box-shadow: 0 0 35px solid #b74b4b;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+    transform: scale(1.3);
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: 0.18rem solid #b74b4b;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin: 1.5rem 1rem 2rem 0;
+    transition: 0.3 ease;
+}
+
+footer {
+    color: white;
+}
