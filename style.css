@@ -39,12 +39,10 @@ header.navbar-container .logo h3 {
     transform: scale(1.8);
 }
 
-.navbar-container{
+header.navbar-container{
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
-    background: #ffffff;
-    z-index: 101;
+    padding: 5px;
 }
 
 header.navbar-container .nav-list ul {
@@ -87,7 +85,6 @@ nav.nav-list li:hover a   {
 }
 
 section{
-    min-height: 80vh;
     padding: 5rem 9% 5rem;
 }
 
@@ -218,14 +215,10 @@ span{
 
 .card{
     filter: drop-shadow(0 0 15px #b74b4b);
-    padding: 1px;
     border-radius: 14px;
     background-color: #b74b4b;
     padding-top: 20px;
     margin: 0px 60px 0px 60px ;
-    padding-left: 40px;
-    height: auto;
-    display: inline-block;
 }
 
 .content #about {
@@ -233,17 +226,15 @@ span{
 }
 
 .content #about img {
-    width: 30vw;
-    margin-top: 60px;
-    position: relative;
+    width: 35vw;
+    margin-top: 20px;
     float: left;
 }
 
 .content #about .about-me {
     font-size: 38px;
-    position: relative;
+    text-align: center;
     font-family: sans-serif;
-    margin-bottom: 20px;
 }
 
 .content #about .about-text{
@@ -251,6 +242,10 @@ span{
     line-height: 1.6;
 }
 
+.content #about .about-text #p2{
+    text-align: justify;
+    margin-left: 4px;
+}
 
 
 @keyframes cursor{
