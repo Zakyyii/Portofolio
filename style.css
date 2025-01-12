@@ -1,615 +1,186 @@
-*, html {
-    font-family: 'Quicksand', sans-serif;
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-}
-
-
-body {
-    background-color: #000000;
-    margin-top: auto;
-    padding: 0;
-}
-
-header.navbar-container {
-    width: 100%;
-    max-width: 1200px;
-    padding-block: 1rem;
-    margin-inline:auto ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    background-color: transparent;
-    filter: drop-shadow(10px);
-}
-
-
-
-header.navbar-container .logo h3 {
-    color: #b74b4b;
-    font-family: sans-serif;
-    cursor: pointer;
-    font-weight: 800;
-    transition: all 0.15s ease-in-out;
-}
-
-.logo:hover {
-    transform: scale(1.8);
-}
-
-header.navbar-container{
-    position: sticky;
-    top: 0;
-    padding: 5px;
-}
-
-header.navbar-container .nav-list ul {
-    padding-left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem 1rem;
-}
-
-
-header.navbar-container .nav-list li {
-    list-style: none;
-}
-
-header.navbar-container .nav-list li a {
-    padding: 0.5rem 1.5rem;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 1.08rem;
-    font-weight: 600;
-    color: #ffffff;
-    transition: all 0.15s ease-in-out;
-    border-bottom: 3px solid transparent;
-}
-
-header.navbar-container .nav-list li .home-nav {
-    color: #b74b4b;
-    border-bottom: 3px solid #b74b4b;
-}
-
-.nav-list li .home {
-    display: block;
-}
-
-nav.nav-list li:hover a   {
-    font-weight: bold;
-    transform: scale(1.1);
-    border-bottom: 3px solid #b74b4b;
-}
-
-section{
-    padding: 5rem 9% 5rem;
-    min-height: 80vh;
-}
-
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    padding-top: 3rem;
-    background-color: rgb(0, 0, 0);    
-    margin-bottom: 13rem;
-}
-
-.home .home-content h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: white;
-}
-
-span{
-    color: #b74b4b;
-}
-
-.home-content h3{
-    font-size: 1.95rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    color: white;
-}
-
-.home-content p {
-    font-size: 1.3rem;
-    color: white;
-}
-
-.home-img {
-    border-radius: 50%;
-}
-
-.home-img img {
-    position: relative;
-    width: 40vw;
-    border-radius:50% ;
-    cursor: pointer;
-    transition: 0.2s linear;
-}
-
-.home-img img:hover{
-    font-size: 1.4rem;
-    font-weight: 500;
-    transform: scale(1.3);
-    filter: drop-shadow(0 0 15px #b74b4b);
-}
-
-@media(max-width: 1200px){
-    .home-img img{
-        width: 47vw;
-    }
-    .navbar-container{
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        padding: 5px;
-    }
-    .logo:hover{
-        transform: scale(1.1);
-    }
-}
-
-.social-media a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: transparent;
-    border: 0.18rem solid #b74b4b;
-    border-radius: 50%;
-    font-size: 1.3rem;
-    margin: 1.5rem 1rem 2rem 0;
-    transition: 0.3 ease;
-    color: #b74b4b;
-    text-decoration: none;
-}
-
-.social-media a:hover{
-    color: black;
-    transform: scale(1.2) translateY(-3px);
-    background-color: #b74b4b;
-    box-shadow: 0 0 25px whitesmoke;
-}
-
-.btn{
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: black;
-    border: 0.18rem solid;
-    border-radius: 4rem;
-    font-size: 1rem;
-    color: #b74b4b;
-    letter-spacing: 0.2rem;
-    font-weight: 400;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.btn:hover{
-    transform: scale3d(1.03);
-    background-color: #b74b4b;
-    color: #000000;
-    box-shadow: 0 0 25px whitesmoke;
-}
-
-.typing-text{
-    font-size: 25px;
-    font-weight: 600;
-    min-width: 280px;
-}
-
-.typing-text span{
-    position: relative;
-}
-
-.typing-text span::before{
-    content: "Web Developer";
-    color: #b74b4b;
-    text-shadow: 0 0 30px #b74b4b;
-    animation: words 20s infinite;
-}
-
-.typing-text span::after{
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid black;
-    right: -8;
-    animation: cursor 0.6s infinite;
-}
-
-.content{
-margin-top: 230px;
-}
-
-.card{
-    filter: drop-shadow(0 0 15px #b74b4b);
-    border-radius: 14px;
-    background-color: #b74b4b;
-    padding: 20px 20px 0px 0px;
-    margin: 0px 60px 0px 60px ;
-    height: 23.5rem;
-    margin-bottom: 5rem;
-}
-
-.content #about {
-    color: white;
-}
-
-.content #about img {
-    width: 33vw;
-    margin-top: 20px;
-    float: left;
-}
-
-.content #about .about-me {
-    font-size: 38px;
-    text-align: left;
-    font-family: sans-serif;
-    margin-bottom: 8px;
-    text-shadow: 0 0 5px white;
-}
-
-.content #about .about-me:hover{
-    text-decoration-line: underline;
-}
-
-.content #about .about-text{
-    display: flex;
-    line-height: 1.6;
-}
-
-.content #about .about-text #p2{
-    margin-left: 10px;
-}
-
-@media(max-width: 1200px) {
-    .content #about img{
-        width: 42vw;
-    }
-    .content #about p{
-        padding: 2px 0px;
-    }
-}
-
-.content-education{
-    color: white;
-    width: 100%;
-    min-height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-edu{
-    width: 100%;
-    padding: 35px 10%;
-}
-
-.content-education .container-edu header.edu-title{
-    font-family: Helvetica, sans-serif;
-    color: #b74b4b;
-    padding: 0px 0px 20px 30px;
-}
-
-.edu-text{
-    padding: 0px 28.9px;
-    border-left: 4px solid #bababa;
-}
-
-.education-text{
-    position: relative;
-    padding: 20px 20rem 2rem 0px;
-    border: 2px solid #ffffff;
-    background-color: #b74b4b;
-    cursor: pointer;
-    transition: all 0.4s;
-    margin-bottom: 20px;
-    border-radius: 14px;
-    box-shadow: 0px 3px 10px 0px #ffffff;
-}
-
-
-
-.education-text h3 h4 p{
-    text-align: right;
-}
-
-.education-text h3{
-    position: relative;
-}
-
-.education-text h4{
-    padding: 10px 0px 6px;
-}
-
-.education-text p{
-    line-height: 1.2;
-    font-size: 16px;
-}
-.education-text img{
-    width: 13vw;
-    position: relative;
-    float: left;
-    margin-top: calc(0% - 20px);
-    border-radius: 50%;
-}
-
-
-.education-text:hover{
-    box-shadow: 0px 3px 26px 0px #b74b4b;
-    border: 2px solid transparent;
-    color: #b74b4b;
-    background-color: #ffffff;
-}
-
-.education-text::before{
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    right: calc(100% + 23px);
-    background-color: #b74b4b;
-    top: 3.959rem;
-    border: 2px solid white;
-    box-shadow: #ffffff;
-}
-
-.skills-container{
-    color: #ffffff;
-}
-
-.skills-title{
-    text-align: center;
-    font-size: 40px;
-    padding-bottom: 70px;
-    padding-top: 20px;
-    color: #ffffff;
-}
-
-.skills-title span{
-    color: #b74b4b;
-}
-
-section .skills{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skills-container{
-    width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 19rem;
-}
-
-.heading-skills{
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    margin-bottom: 50px;
-}
-
-.bar{
-    font-size: 30px;
-}
-
-.technical-bars .bar{
-    margin: 40px 0px;
-}
-
-.technical-bars .bar:first-child{
-    margin-top: 0px;
-}
-
-.technical-bars .bar:last-child{
-    margin-bottom: 0px;
-}
-
-.technical-bars .bar .info{
-    margin-bottom: 5px;
-}
-
-.technical-bars .bar .info span{
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-
-.technical-bars .bar .progress-line{
-    position: relative;
-    width: 100%;
-    border-radius: 10px;
-    height: 5px;
-    background-color: #1a1111;
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.technical-bars .bar .progress-line span{
-    height: 100%;
-    background-color: #b74b4b;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.progress-line.html span{
-    width: 40%;
-}
-.progress-line.css span{
-    width: 25%;
-}
-.progress-line.javascript span{
-    width: 5%;
-}
-.progress-line.react span{
-    width: 0%;
-}
-
-.progress-line span::after{
-    position: absolute;
-    padding: 1px 8px;
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-.progress-line.html span::after{
-    content: "40%";
-}
-.progress-line.css span::after{
-    content: "25%";
-}
-.progress-line.javascript span::after{
-    content: "5%";
-}
-.progress-line.react span::after{
-    content: "0%";
-}
-
-.progress-line span::before{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000000;
-    top: -10px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-@keyframes showText{
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes animate{
-    100%{
-        transform: scaleX(1);
-    }
-}
-
-@media(max-width: 768px){
-    /* .education-text p{
-        
-    } */
-    .education-text img{
-        width: 20vw;
-        padding: 10px 0px 5px;
-        margin-top: 2px;
-    }
-    .education-text::before{
-        top: calc(50% - 1px);
-    }
-}
-
-@media(max-width: 1200px){
-    .education-text img{
-        width: 19vw;
-        padding: 12px 0px 0px;
-    }
-}
-
-@keyframes cursor{
-    to{
-        border-left: 3px solid #b74b4b;
-    }
-}
-
-@keyframes words {
-    0%, 20%{
-    content: "Web Developer";
-    }
-    21%, 40%{
-        content: "UI/UX Developer";
-    }
-    41%, 60%{
-        content: "Web Designer";
-    }
-    61%, 80%{
-        content: "Back End Dev";
-    }
-    81%, 100%{
-        content: "ITB Students";
-    }
-}
-
-@media (max-width: 1000px){
-    .home{
-        gap: 4rem;
-    }
-}
-
-@media(max-width:995px){
-    .home{
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-
-    .home .home-content h3{
-        font-size: 2.5rem;
-    }
-
-    .home-content h1{
-        font-size: 5rem;
-    }
-
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-}
-
-@media screen and (max-width: 467px){
-    .card{
-    margin: 0px 60px 60px 60px ;
-    height: 50.5rem;
-    margin-bottom: 7rem;
-    }
-    .card h2.about-me{
-        text-align: center;
-        padding-top: 10rem;
-        margin-left: 5rem;
-    }
-    .content #about img{
-        width: 66vw;
-        height: auto;
-    }
-    .content #about .p2{
-        padding: 0px 20px 20px 0px;
-    }
-}
-
-footer {
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najwan Zaki</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="navbar-container">
+
+        <div class="logo">
+            <h3>Zakyy</h3>
+        </div>
+
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#home" class="home-nav">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="home" id="home">
+            <aside class="home-img">
+                <img src="assets/images/IMG_0286-removebg-preview (1).png" alt="Zaky Foto">
+            </aside>
+            <div class="home-content">
+                <h1>Hi, It's me <span>Zakyy</span></h1>
+                <h3 class="typing-text"> I'm Want To Be a <span class="cursor"></span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae et quaerat odio repudiandae accusamus
+                    aperiam consequatur eveniet voluptatem quis, ex fuga non rerum! Pariatur reiciendis beatae, voluptas
+                    repellendus quos aut?</p>
+
+                <div class="social-media">
+                    <a href="https://www.instagram.com/najwanza_/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/Zakyyii"><i class="fab fa-github"></i></a>
+                    <a href="https://www.tiktok.com/@zaxskyy_"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <a href="mailto:zaxskyy30@gmail.com" class="btn">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <article id="about" class="card">
+                <img src="assets/images/IMG_0286-removebg-preview (1).png" alt="Foto Zaki">
+                <h2 class="about-me">About Me</h2>
+                <div class="about-text">
+                    <p id="p1"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio et veniam a,
+                        commodi
+                        possimus
+                        nihil suscipit molestias, corrupti dolorem beatae minima eius fugit exercitationem. Dignissimos
+                        fugiat provident repudiandae accusantium cumque!</p>
+                    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi explicabo molestiae at
+                        nulla perspiciatis nobis maiores, quaerat fuga velit, porro magni fugiat voluptatem vitae
+                        aspernatur unde itaque error! Magni autem error expedita libero. Reprehenderit maiores fugit
+                        amet! Totam, corrupti! Non cumque nemo quasi, molestiae velit vel vitae distinctio ratione
+                        consequuntur.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="content-education" id="education">
+            <div class="container-edu">
+
+            <header class="edu-title">
+                <h2>Education Journey</h2>
+            </header>
+
+            <div class="edu-text">
+            <div class="education-text">
+                <img src="https://3.bp.blogspot.com/-s95tgL3uf0E/WgKTHRoQZpI/AAAAAAAAEmA/J0ApeaSrpZ4oSsC6SQtyZ50yG5RmhKjDwCLcBGAs/s1600/itb.png" alt="">
+                <h3>Web Developer</h3>
+                <h4>Aamiin</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum dicta accusantium esse fugit
+                    deserunt.</p>
+            </div>
+
+            <div class="education-text">
+                <img src="https://3.bp.blogspot.com/-s95tgL3uf0E/WgKTHRoQZpI/AAAAAAAAEmA/J0ApeaSrpZ4oSsC6SQtyZ50yG5RmhKjDwCLcBGAs/s1600/itb.png" alt="Institut Teknologi Bandung Logo">
+                <h3>Institut Teknologi Bandung</h3>
+                <h4>Aamiin</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum dicta accusantium esse fugit
+                    deserunt.</p>
+            </div>
+
+            <div class="education-text">
+                <img src="assets/images/Sambadha.png" alt="SMAN 1 Pandeglang Logo">
+                <h3>SMAN 1 Pandeglang</h3>
+                <h4>2023 - 2026</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum dicta accusantium esse fugit
+                    deserunt.</p>
+            </div>
+
+            <div class="education-text">
+                <img src="assets/images/Tut Wuri Handayani SMP.png" alt="Tut Wuri Handayani Logo">
+                <h3>SMPN 2 Karang Tanjung</h3>
+                <h4>2020 - 2023</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum dicta accusantium esse fugit
+                    deserunt.</p>
+            </div>
+
+            <div class="education-text">
+                <img src="assets/images/logo sd.png" alt="Indonesia School Elementary Logo">
+                <h3>SDN Pagadungan 01 </h3>
+                <h4>2014 - 2020</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum dicta accusantium esse fugit
+                    deserunt.</p>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+        <h2 class="skills-title">
+            My <span>Skills</span>
+        </h2>
+        <section class="skills">
+            <div class="skills-container" id="skills">
+
+                <h2 class="heading-skills">Technical Skills</h2>
+                <div class="technical-bars">
+                    <div class="bar"><i <i style="color: #c95d2e;" class='bx bxl-html5'></i>
+                    <div class="indfo">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar"><i <i style="color: #147bbc;" class='bx bxl-css3'></i>
+                    <div class="indfo">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar"><i <i style="color: #b0bc1e;" class='bx bxl-javascript'></i>
+                    <div class="indfo">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar"><i <i style="color: #69BCBC;" class='bx bxl-react'></i>
+                    <div class="indfo">
+                        <span>React</span>
+                    </div>
+                    <div class="progress-line react">
+                        <span></span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>&copy; ; 2024, Najwan Zaki</footer>
+</body>
+
+</html>
