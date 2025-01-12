@@ -86,6 +86,7 @@ nav.nav-list li:hover a   {
 
 section{
     padding: 5rem 9% 5rem;
+    min-height: 80vh;
 }
 
 .home {
@@ -94,7 +95,7 @@ section{
     align-items: center;
     gap: 5rem;
     padding-top: 3rem;
-    background-color: black; 
+    background-color: rgb(0, 0, 0);    
     margin-bottom: 13rem;
 }
 
@@ -140,6 +141,20 @@ span{
     filter: drop-shadow(0 0 15px #b74b4b);
 }
 
+@media(max-width: 1200px){
+    .home-img img{
+        width: 47vw;
+    }
+    .navbar-container{
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+    }
+    .logo:hover{
+        transform: scale(1.1);
+    }
+}
 
 .social-media a {
     display: inline-flex;
@@ -213,12 +228,18 @@ span{
     animation: cursor 0.6s infinite;
 }
 
+.content{
+margin-top: 230px;
+}
+
 .card{
     filter: drop-shadow(0 0 15px #b74b4b);
     border-radius: 14px;
     background-color: #b74b4b;
-    padding-top: 20px;
+    padding: 20px 20px 0px 0px;
     margin: 0px 60px 0px 60px ;
+    height: 23.5rem;
+    margin-bottom: 5rem;
 }
 
 .content #about {
@@ -226,15 +247,21 @@ span{
 }
 
 .content #about img {
-    width: 35vw;
+    width: 33vw;
     margin-top: 20px;
     float: left;
 }
 
 .content #about .about-me {
     font-size: 38px;
-    text-align: center;
+    text-align: left;
     font-family: sans-serif;
+    margin-bottom: 8px;
+    text-shadow: 0 0 5px white;
+}
+
+.content #about .about-me:hover{
+    text-decoration-line: underline;
 }
 
 .content #about .about-text{
@@ -243,10 +270,270 @@ span{
 }
 
 .content #about .about-text #p2{
-    text-align: justify;
-    margin-left: 4px;
+    margin-left: 10px;
 }
 
+@media(max-width: 1200px) {
+    .content #about img{
+        width: 42vw;
+    }
+    .content #about p{
+        padding: 2px 0px;
+    }
+}
+
+.content-education{
+    color: white;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-edu{
+    width: 100%;
+    padding: 35px 10%;
+}
+
+.content-education .container-edu header.edu-title{
+    font-family: Helvetica, sans-serif;
+    color: #b74b4b;
+    padding: 0px 0px 20px 30px;
+}
+
+.edu-text{
+    padding: 0px 28.9px;
+    border-left: 4px solid #bababa;
+}
+
+.education-text{
+    position: relative;
+    padding: 20px 20rem 2rem 0px;
+    border: 2px solid #ffffff;
+    background-color: #b74b4b;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 3px 10px 0px #ffffff;
+}
+
+
+
+.education-text h3 h4 p{
+    text-align: right;
+}
+
+.education-text h3{
+    position: relative;
+}
+
+.education-text h4{
+    padding: 10px 0px 6px;
+}
+
+.education-text p{
+    line-height: 1.2;
+    font-size: 16px;
+}
+.education-text img{
+    width: 13vw;
+    position: relative;
+    float: left;
+    margin-top: calc(0% - 20px);
+    border-radius: 50%;
+}
+
+
+.education-text:hover{
+    box-shadow: 0px 3px 26px 0px #b74b4b;
+    border: 2px solid transparent;
+    color: #b74b4b;
+    background-color: #ffffff;
+}
+
+.education-text::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 23px);
+    background-color: #b74b4b;
+    top: 3.959rem;
+    border: 2px solid white;
+    box-shadow: #ffffff;
+}
+
+.skills-container{
+    color: #ffffff;
+}
+
+.skills-title{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 70px;
+    padding-top: 20px;
+    color: #ffffff;
+}
+
+.skills-title span{
+    color: #b74b4b;
+}
+
+section .skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-container{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 19rem;
+}
+
+.heading-skills{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom: 50px;
+}
+
+.bar{
+    font-size: 30px;
+}
+
+.technical-bars .bar{
+    margin: 40px 0px;
+}
+
+.technical-bars .bar:first-child{
+    margin-top: 0px;
+}
+
+.technical-bars .bar:last-child{
+    margin-bottom: 0px;
+}
+
+.technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+
+.technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.technical-bars .bar .progress-line{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    height: 5px;
+    background-color: #1a1111;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #b74b4b;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span{
+    width: 40%;
+}
+.progress-line.css span{
+    width: 25%;
+}
+.progress-line.javascript span{
+    width: 5%;
+}
+.progress-line.react span{
+    width: 0%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after{
+    content: "40%";
+}
+.progress-line.css span::after{
+    content: "25%";
+}
+.progress-line.javascript span::after{
+    content: "5%";
+}
+.progress-line.react span::after{
+    content: "0%";
+}
+
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+@media(max-width: 768px){
+    /* .education-text p{
+        
+    } */
+    .education-text img{
+        width: 20vw;
+        padding: 10px 0px 5px;
+        margin-top: 2px;
+    }
+    .education-text::before{
+        top: calc(50% - 1px);
+    }
+}
+
+@media(max-width: 1200px){
+    .education-text img{
+        width: 19vw;
+        padding: 12px 0px 0px;
+    }
+}
 
 @keyframes cursor{
     to{
@@ -278,12 +565,6 @@ span{
     }
 }
 
-@media (max-width: 1000px){
-    .home{
-        gap: 4rem;
-    }
-}
-
 @media(max-width:995px){
     .home{
         flex-direction: column;
@@ -304,6 +585,25 @@ span{
     }
 }
 
+@media screen and (max-width: 467px){
+    .card{
+    margin: 0px 60px 60px 60px ;
+    height: 50.5rem;
+    margin-bottom: 7rem;
+    }
+    .card h2.about-me{
+        text-align: center;
+        padding-top: 10rem;
+        margin-left: 5rem;
+    }
+    .content #about img{
+        width: 66vw;
+        height: auto;
+    }
+    .content #about .p2{
+        padding: 0px 20px 20px 0px;
+    }
+}
 
 footer {
     color: white;
