@@ -56,6 +56,16 @@ header.navbar-container .nav-list ul {
 
 header.navbar-container .nav-list li {
     list-style: none;
+    top: 0;
+}
+
+.pinggir{
+    color: #ffffff;
+}
+
+#all-content{
+    float: left;
+    width: 75%;
 }
 
 header.navbar-container .nav-list li a {
