@@ -36,7 +36,7 @@ header.navbar-container .logo h3 {
 }
 
 .logo:hover {
-    transform: scale(1.8);
+    transform: scale(1.1);
 }
 
 header.navbar-container{
@@ -269,9 +269,9 @@ margin-top: 230px;
     line-height: 1.6;
 }
 
-.content #about .about-text #p2{
+/* .content #about .about-text #p2{
     margin-left: 10px;
-}
+} */
 
 @media(max-width: 1200px) {
     .content #about img{
@@ -588,7 +588,7 @@ section .skills{
 @media screen and (max-width: 467px){
     .card{
     margin: 0px 60px 60px 60px ;
-    height: 50.5rem;
+    height: 53.5rem;
     margin-bottom: 7rem;
     }
     .card h2.about-me{
@@ -600,8 +600,11 @@ section .skills{
         width: 66vw;
         height: auto;
     }
-    .content #about .p2{
-        padding: 0px 20px 20px 0px;
+    .content #about .about-text{
+        flex-direction: column;
+        padding: 0px 2rem;
+        text-align: justify;
+        gap: 20px;
     }
 }
 
