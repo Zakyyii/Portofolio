@@ -5,6 +5,9 @@
     margin: 0;
 }
 
+main{
+    overflow: auto;
+}
 
 body {
     background-color: #000000;
@@ -27,17 +30,24 @@ header.navbar-container {
 
 
 
-header.navbar-container .logo h3 {
+header.navbar-container .logo {
     color: #b74b4b;
     font-family: sans-serif;
     cursor: pointer;
-    font-weight: 800;
+    font-weight: 900;
     transition: all 0.15s ease-in-out;
+
 }
 
 .logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.8);
 }
+
+/* @media (width > 980px) {
+    .logo{
+        mix-blend-mode: difference;
+    }
+} */
 
 header.navbar-container{
     position: sticky;
@@ -46,26 +56,20 @@ header.navbar-container{
 }
 
 header.navbar-container .nav-list ul {
-    padding-left: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 2rem 1rem;
+    
 }
 
+.nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
 header.navbar-container .nav-list li {
     list-style: none;
     top: 0;
-}
-
-.pinggir{
-    color: #ffffff;
-}
-
-#all-content{
-    float: left;
-    width: 75%;
 }
 
 header.navbar-container .nav-list li a {
@@ -254,12 +258,12 @@ margin-top: 230px;
 
 .content #about {
     color: white;
+    display: flex;
 }
 
 .content #about img {
     width: 33vw;
     margin-top: 20px;
-    float: left;
 }
 
 .content #about .about-me {
@@ -277,6 +281,7 @@ margin-top: 230px;
 .content #about .about-text{
     display: flex;
     line-height: 1.6;
+padding-top: 5rem;
 }
 
 /* .content #about .about-text #p2{
@@ -332,10 +337,12 @@ margin-top: 230px;
 
 .education-text h3 h4 p{
     text-align: right;
+    display: inline;
 }
 
 .education-text h3{
     position: relative;
+    display: inline;
 }
 
 .education-text h4{
@@ -345,14 +352,15 @@ margin-top: 230px;
 .education-text p{
     line-height: 1.2;
     font-size: 16px;
+    display: inline;
 }
 .education-text img{
     width: 13vw;
     position: relative;
-    float: left;
     margin-top: calc(0% - 20px);
     border-radius: 50%;
 }
+
 
 
 .education-text:hover{
