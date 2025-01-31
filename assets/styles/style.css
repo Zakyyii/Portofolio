@@ -121,6 +121,10 @@ section{
     color: white;
 }
 
+.home-content{
+    padding-right: 5rem;
+}
+
 span{
     color: #b74b4b;
 }
@@ -405,7 +409,7 @@ padding-top: 5rem;
 .skills-title{
     text-align: center;
     font-size: 40px;
-    padding-bottom: 70px;
+    /* padding-bottom: 2px; */
     padding-top: 20px;
     color: #ffffff;
 }
@@ -648,4 +652,8 @@ footer {
     border-radius: 10px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
